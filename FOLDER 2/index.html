@@ -51,16 +51,22 @@
         <li><a href="www.emyworld.com.ng">emyworld</a></li>
     </ol>
     <h1>student form</h1>
-    <form>
-        first name:<input type="test"><br>
-        second name:<input type="test"><br>
-        email:<input type="email" email required><br>
+    <form method="post" enctype="multipart/form-data">
+        first name:<input type="text" placeholder="first name" value="">
+        first name:<input type="text" readonly placeholder="first name" value="kolapo" id="first" class="btn">
+        second name:<input type="text" placeholder="second name">
+        email:<input type="email" required><br>
         password:<input type="password"min="5"><br>
         birthday:<input type="date"><br>
+        <input type="file" name="avatar" id="">
+        <input type="button" value="submit" style="border: 0ch; color: aquamarine; background-color: blue;">
+        <button type="submit">done</button>
         Gender<br>
         <input type="radio" name="gender">male<br>
         <input type="radio"name="gender">female<br>
-        <input type="radio"name="gender">other<br>
+        <input type="checkbox"name="gender">other<br>
+        <input type="checkbox"name="gender">other<br>
+        <input type="checkbox"name="gender">other<br>
 
 
     </form>
