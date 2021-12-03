@@ -4,43 +4,87 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>long table</title>
-    <table>
-        <thead>
-            <tr>
-                <th>date</th>
-                <th>income</th>
-                <th>expenditure</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <th>ist january</th>
-                <td>250</td>
-                <td>36</td>
-            </tr>
-            <tr>
-                <th>2nd january</th>
-                <td>285</td>
-                <td>48</td>
-            </tr>
-            <tr>
-                <th>31 <sup>th</sup>january</th>
-                <td>129</td>
-                <td>64</td>
-
-            </tr>
-        </tbody>
-        <tfoot>
-            <tr>
-                <td></td>
-                <td>7824</td>
-                <td>124</td>
-            </tr>
-        </tfoot>
-    </table>
+    <title>form</title>
 </head>
 <body>
-    
+    <form action="http://www.example.com/review.php"method="get">
+        <fieldset>
+            <legend>
+               your details
+            </legend>
+            <label>
+                name:
+                <input type="text"name="name"> 
+            </label>
+            <br />
+            <label>
+                email 
+                <input type="text"name="email"required>
+
+            </label>
+            <br />
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>
+                your review
+            </legend>
+            <p>
+                <label for="hear about ">
+                    how did you hear about us
+                </label>
+                <select name="referrer" id="hear about us">
+                    <option value="google">google</option>
+                    <option value="friend">friend</option>
+                    <option value="social media">social media</option>
+                    <option value="advert">advert</option>
+                    <option value="other">other</option>
+
+                </select>
+                <p>
+                    will you like to visit again?
+                    <br />
+                    <label>
+                        <input type="radio"name="rating"value="yes"/>
+                        yes
+
+                    </label>
+                    <label>
+                        <input type="radio"name="rating"value="no"/>
+                        no
+                        <label>
+                            <input type="radio"name="rating"value="maybe"/>
+                            maybe
+                        </label>
+
+                    </label>
+
+                </p>
+                <p>
+                    <label for="for comment">
+                        comment
+                    </label>
+                    <br>
+                    <textarea  id="comment" cols="30" rows="4"></textarea>
+                    
+                </p>
+                <label>
+                    <input type="checkbox"name="subscribe"checked="checked">
+                    sign me up email update
+                </label>
+                <br>
+                <input type="submit"value="submit review">
+            
+                
+                
+            </p>
+        </fieldset>
+
+                    
+                
+                    
+        
+            
+        
 </body>
 </html>
